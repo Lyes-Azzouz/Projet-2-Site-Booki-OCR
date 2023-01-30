@@ -1,0 +1,1165 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  max-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header {
+  color: #000000;
+}
+
+.topbar {
+  padding: 44px 0;
+  font-size: 0.842rem;
+  text-align: center;
+  display: flex;
+}
+
+.logo img {
+  position: absolute;
+  width: 61.09px;
+  height: 19px;
+  left: 0px;
+  top: 0px;
+  margin-top: 44px;
+  margin-left: 55px;
+}
+
+.rectangle {
+  position: absolute;
+  width: 162px;
+  height: 2px;
+  left: 110px;
+  bottom: 65px;
+  background: #0065fc;
+}
+
+.menu {
+  position: absolute;
+  width: 381px;
+  height: 19px;
+  left: 982px;
+  top: 48px;
+}
+
+.menu-item-1 {
+  position: absolute;
+  left: 36.22%;
+  right: 34.12%;
+  top: 0%;
+  bottom: 0%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0065fc;
+}
+
+.menu-item-2 {
+  position: absolute;
+  left: 83.46%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.description-container h1 {
+  position: absolute;
+  left: 55px;
+  top: 126px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.description-container p {
+  position: absolute;
+  width: 296px;
+  height: 19px;
+  left: 55px;
+  top: 160px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.baseline form {
+  position: absolute;
+  width: 332px;
+  height: 49px;
+  left: 55px;
+  top: 199px;
+}
+
+.baseline .icon_location {
+  position: absolute;
+  left: 0%;
+  right: 90.36%;
+  top: 20px;
+  bottom: 30.61%;
+  background: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
+  height: 50px;
+  width: 49px;
+  z-index: 1;
+}
+
+.icon_location i {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  left: 18px;
+  top: 16px;
+  bottom: 16px;
+  right: 0px;
+}
+
+.information img {
+  position: absolute;
+  margin: 18px 0px 0px 14px;
+}
+
+.elipse img {
+  position: relative;
+  padding: 12px 0px 0px 4px;
+}
+
+.baseline input {
+  position: absolute;
+  margin: 10% 1%;
+  padding: 0% 6% 0% 20%;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Raleway";
+}
+
+.baseline span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 16px;
+  gap: 10px;
+  color: #ffffff;
+  position: absolute;
+  width: 132px;
+  height: 49px;
+  left: 280px;
+  top: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  background: #0065fc;
+  border: 1px solid #0065fc;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.filterbar {
+  position: absolute;
+  width: 914px;
+
+  left: 62px;
+  top: 294px;
+}
+
+.filterbar_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.filterbar_filtre h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.filterbar_link {
+  display: flex;
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.filterbar_link i {
+  left: 0%;
+  right: 0%;
+  top: 13.04%;
+  bottom: 13.04%;
+  margin-right: 10px;
+}
+
+.filterbar_link li {
+  margin-top: -15px;
+  padding: 10px 20px;
+  margin-right: 43px;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+}
+
+.filterbar_link li,
+.filterbar_link a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.eco:hover,
+.fam:hover,
+.ani:hover,
+.rom:hover {
+  background: #deebff;
+  transition: 0.2s;
+}
+
+.infobar {
+  position: absolute;
+  width: 447px;
+  height: 24px;
+  left: 59px;
+  top: 365px;
+}
+
+.icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: -17px;
+  top: -14px;
+}
+
+.info {
+  position: absolute;
+  left: 43%;
+  right: 96.87%;
+  top: 19px;
+  bottom: 29.17%;
+}
+
+.infobar h3 {
+  position: absolute;
+  width: 412px;
+  height: 19px;
+  left: 30px;
+  top: 3px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.container {
+  position: absolute;
+  height: 626px;
+  left: 50px;
+  top: 444px;
+  background: #f2f2f2;
+  border-radius: 20px;
+}
+
+.block-img {
+  height: 124px;
+  width: 246px;
+  border: 5px solid #ffffff;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.a .block-img {
+  background: url(./assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.b .block-img {
+  background: url(./assets/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.c .block-img {
+  background: url(./assets/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.d .block-img {
+  background: url(./assets/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.e .block-img {
+  background: url(./assets/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.f .block-img {
+  background: url(./assets/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.prix i {
+  font-size: 12px;
+  position: relative;
+  top: -9px;
+  left: 18px;
+  margin: 0px -2px;
+  color: #0065fc;
+}
+
+.container h1 {
+  position: absolute;
+  left: 4.55%;
+
+  top: 3.71%;
+  bottom: 89.14%;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.block-top {
+  display: flex;
+  position: absolute;
+  left: 4.55%;
+  right: 31px;
+  top: 14.3%;
+  bottom: 53.67%;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.block-first {
+  margin-right: 31px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 200px;
+}
+
+.block-first h4 {
+  position: relative;
+  width: 204px;
+  height: 15px;
+  margin-top: 0px;
+  margin-left: 16px;
+}
+
+.block-first p {
+  margin-top: -10px;
+  margin-left: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.block-bottom {
+  display: flex;
+  margin-top: 340px;
+  margin-left: 40px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.show-more {
+  position: absolute;
+  left: 5%;
+  top: 92%;
+  bottom: 7.35%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.cards {
+  position: absolute;
+  width: 420px;
+  height: 625px;
+  left: 970px;
+  top: 446px;
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding-top: 15px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px 30px 25px;
+  background: #ffffff;
+  border-radius: 20px;
+  float: left;
+  height: 144px;
+  width: 343px;
+  padding-right: 30px;
+  padding-top: 4px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card_img img {
+  border: 5px solid #ffffff;
+  border-radius: 20px 0px 0px 20px;
+  width: 140px;
+  height: 144px;
+  background-size: auto;
+}
+
+.card-title {
+  display: flex;
+}
+
+.card-title h1 {
+  margin: 20px 0px 26px 37px;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.card-title i {
+  margin: 25px 0px 0px 120px;
+}
+
+.card-stars i {
+  font-size: 12px;
+  width: 10px;
+  padding: 0px 0px 15px 10px;
+}
+
+.card-subtitle h2 {
+  width: 169px;
+  height: 38px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.card-description p {
+  width: 169px;
+  height: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 39px;
+}
+
+.cards-footer h1 {
+  position: absolute;
+  height: 30.02px;
+  left: 50px;
+  top: 1112px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.card-bottom {
+  position: absolute;
+  width: 1337px;
+  height: 493px;
+  left: 50px;
+  top: 1112px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.card-info {
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin: 65px 43px 0px 0px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.card-info img {
+  height: 389px;
+  width: 302px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card-info span {
+  position: absolute;
+  height: 50px;
+  width: 302px;
+  background: #ffffff;
+  padding: 15px 36px 20px 19px;
+  border-radius: 0px 0px 20px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer {
+  background: #f2f2f2;
+  margin: 1600px 53px 7px 48px;
+  height: 225px;
+  width: 1339px;
+  display: flex;
+}
+
+.footer h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: left;
+  margin: 20px 0px 58px 70px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 250px;
+}
+
+.footer-column a {
+  line-height: 2rem;
+}
+
+/*********** RESPONSIVE TABLETTE *******************/
+
+@media screen and (max-width: 992px) {
+  body {
+    width: 1024px;
+    height: 2076px;
+  }
+
+  .menu {
+    position: absolute;
+    width: 381px;
+    height: 19px;
+    left: 571px;
+    top: 48px;
+  }
+
+  .filterbar_container {
+    margin-left: -10px;
+  }
+
+  .filterbar_link li {
+    margin-left: -20px;
+  }
+
+  .cards {
+    width: 883px;
+    height: 278px;
+    left: 50px;
+    top: 1125px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .card {
+    height: 144px;
+    width: 252px;
+    margin: 26px 0px 0px 20px;
+  }
+
+  .card-subtitle {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .card p {
+    padding-left: 10px;
+    margin-bottom: 30px;
+  }
+
+  .card-title i {
+    position: relative;
+    left: 79%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+  }
+
+  .card h2 {
+    width: 111px;
+    height: 57px;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  .cards h1 {
+    position: absolute;
+    width: 206px;
+    height: 26px;
+    margin: 20px 708px 26px 20px;
+  }
+
+  .onecard h2 {
+    margin-top: 20px;
+  }
+
+  .onecard p {
+    padding-bottom: 80px;
+    margin-top: -28px;
+  }
+
+  .onecard .card-stars {
+    margin-top: -45px;
+  }
+
+  .twocard h2 {
+    margin-top: 25px;
+  }
+
+  .twocard .card-stars {
+    margin-bottom: 22px;
+  }
+
+  .threecard .card-stars {
+    padding-bottom: 15px;
+  }
+
+  .threecard h2 {
+    padding-top: 20px;
+    margin-bottom: -10px;
+  }
+
+  .threecard .card-stars {
+    padding-top: 20px;
+  }
+
+  .card-stars {
+    margin-bottom: 8px;
+  }
+
+  .card_img img {
+    height: 144px;
+    width: 106px;
+  }
+
+  .onecard .card_img img {
+    visibility: hidden;
+  }
+
+  .onecard .ocimg {
+    position: absolute;
+    width: 106px;
+    left: 0px;
+    top: 0%;
+    bottom: 0%;
+    background: url(./assets/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #ffffff;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  .cards-tablette {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cards-footer h1 {
+    position: absolute;
+    height: 30px;
+    left: 60px;
+    top: 480px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .card-info {
+    margin-top: 430px;
+    margin-left: 5px;
+  }
+
+  .card-info img {
+    height: 237px;
+    width: 182px;
+  }
+
+  .card-name span {
+    position: relative;
+    width: 182px;
+    display: flex;
+    align-items: center;
+  }
+
+  .cards-footer h1 {
+    margin-top: 1000px;
+  }
+
+  .footer {
+    position: relative;
+    width: 875px;
+    bottom: -10.84%;
+    margin-left: 55px;
+  }
+
+  .footer-column {
+    margin-right: 100px;
+  }
+}
+
+/************** RESPONSIVE MOBILE **********************/
+
+@media screen and (max-width: 768px) {
+  body {
+    position: absolute;
+    width: 370px;
+    height: 4113px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo {
+    position: absolute;
+    width: 61.09px;
+    height: 19px;
+    left: 100px;
+    top: -21px;
+  }
+
+  .rectangle {
+    position: absolute;
+    width: 187px;
+    height: 3px;
+    left: 0px;
+    top: 99px;
+    bottom: 31px;
+  }
+
+  .rectangle-2 {
+    position: absolute;
+    width: 188px;
+    height: 3px;
+    left: 187px;
+    top: 99px;
+    background: #f2f2f2;
+  }
+
+  .menu {
+    position: absolute;
+    width: 381px;
+    height: 19px;
+    left: 0px;
+    top: 48px;
+  }
+
+  .menu-item-1 {
+    position: absolute;
+    left: 8.8%;
+    right: 58.4%;
+    top: 48px;
+    bottom: 97.43%;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  .menu-item-2 {
+    position: absolute;
+    left: 65.87%;
+    right: 17.33%;
+    top: 48px;
+    bottom: 97.42%;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  .description-container h1 {
+    position: absolute;
+    height: 52px;
+    left: 20px;
+    top: 163px;
+  }
+
+  .description-container p {
+    position: absolute;
+    width: 315px;
+    height: 19px;
+    left: 20px;
+    top: 228px;
+  }
+
+  .baseline form {
+    position: absolute;
+    left: 20px;
+    right: 0%;
+    top: 283px;
+    bottom: 0%;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px;
+  }
+
+  .baseline span {
+    visibility: hidden;
+  }
+
+  .baseline .loupe {
+    align-items: center;
+    padding: 15px 16px;
+    gap: 10px;
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    left: 282px;
+    top: 19.5px;
+    background: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0px 15px 15px 0px;
+  }
+
+  .filterbar {
+    position: absolute;
+    width: 55px;
+    height: 21px;
+    left: 30px;
+    top: 366px;
+  }
+
+  .filterbar {
+    position: absolute;
+    width: 328px;
+    height: 86px;
+    left: 20px;
+    top: 366px;
+  }
+
+  .block-img {
+    border: 5px solid #ffffff;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .a .block-img {
+    background: url(./assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .b .block-img {
+    background: url(./assets/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .c .block-img {
+    background: url(./assets/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .d .block-img {
+    background: url(./assets/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .e .block-img {
+    background: url(./assets/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .f .block-img {
+    background: url(./assets/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .filterbar_container {
+    flex-direction: column;
+  }
+
+  .filterbar_filtre h2 {
+    position: absolute;
+    width: 55px;
+    height: 21px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .filterbar_link li {
+    width: 160px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .infobar {
+    position: absolute;
+    width: 447px;
+    height: 24px;
+    left: 25px;
+    top: 559px;
+  }
+
+  .infobar h3 {
+    padding-right: 85px;
+  }
+
+  .eco {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    left: 20px;
+    top: 65px;
+  }
+
+  .fam {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    left: 194px;
+    top: 65px;
+  }
+
+  .rom {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    left: 20px;
+    top: 130px;
+  }
+
+  .ani {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    left: 194px;
+    top: 130px;
+  }
+
+  .cards {
+    position: absolute;
+    width: 375px;
+    height: 580px;
+    left: 0px;
+    top: 636px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .card-title i {
+    left: 55%;
+    right: 0%;
+    top: 0;
+    bottom: 0%;
+  }
+
+  .card-title h1 {
+    left: 0;
+  }
+
+  .cards-tablette {
+    flex-direction: column;
+  }
+
+  .cards-tablette a {
+    margin-left: -21px;
+  }
+
+  .onecard img {
+    visibility: hidden;
+  }
+
+  .card_img .ocimg {
+    position: absolute;
+    width: 137px;
+    background: url(./assets/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #ffffff;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  .card {
+    width: 334px;
+    height: 144px;
+    left: 20px;
+    top: 716px;
+    background: #ffffff;
+    border-radius: 20px;
+    justify-content: center;
+  }
+
+  .card img {
+    width: 137px;
+    left: 0px;
+    top: 0%;
+    bottom: 0%;
+    border: 5px solid #ffffff;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  .card i {
+    left: 44.31%;
+    right: 35.86%;
+    top: 83.33%;
+    bottom: 8.33%;
+  }
+
+  section .container {
+    width: 335px;
+    height: 1299px;
+    left: 20px;
+    top: 1242px;
+    border-radius: 0;
+    background: #ffffff;
+    justify-content: center;
+  }
+
+  .container img {
+    border: 5px solid #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    height: 124px;
+    width: 333px;
+  }
+
+  .container h1 {
+    position: absolute;
+
+    height: 26px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .block-top {
+    flex-direction: column;
+    top: 60px;
+    align-items: center;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-left: 40px;
+  }
+
+  .block-first {
+    margin-bottom: 12px;
+    width: 335px;
+    height: 199px;
+  }
+
+  .block-bottom {
+    flex-direction: column;
+    margin-top: 700px;
+    margin-left: 20px;
+
+    border-radius: 20px;
+    align-items: center;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  }
+
+  .show-more {
+    visibility: hidden;
+  }
+
+  .card-bottom {
+    position: absolute;
+    width: 334px;
+    height: 886px;
+    left: 19px;
+    top: 2646px;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 75px;
+  }
+
+  .cards-footer h1 {
+    position: absolute;
+
+    height: 30.02px;
+    left: 22px;
+    top: 1665px;
+    padding-right: 15px;
+  }
+
+  .fp img {
+    visibility: hidden;
+  }
+
+  .fpimg {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: url(./assets/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .card-info {
+    width: 334px;
+    height: 190px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    float: none;
+    margin-left: -4px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .card-info img {
+    width: 334px;
+    height: 190px;
+    border-radius: 20px;
+  }
+
+  .card-info .card-name {
+    position: absolute;
+    height: 56px;
+    left: 0%;
+    right: 0%;
+    bottom: 0px;
+    background: #ffffff;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  .card-info span {
+    position: absolute;
+    width: 247px;
+    height: 15px;
+    left: 19px;
+    bottom: 21px;
+    padding: 0;
+  }
+
+  .footer {
+    position: absolute;
+    width: 375px;
+    height: 491px;
+    margin: 0px 0px 430px 0px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}
