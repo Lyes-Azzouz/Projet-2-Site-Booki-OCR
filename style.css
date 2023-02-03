@@ -5,7 +5,6 @@
 }
 
 html {
-  overflow-x: hidden;
   max-width: 1440px;
 }
 
@@ -16,11 +15,16 @@ body {
   font-style: normal;
   font-family: "Raleway";
   margin: 0;
+  overflow-x: hidden;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+i {
+  color: #0065fc;
 }
 
 .header .topbar {
@@ -39,14 +43,25 @@ a {
 }
 
 .topbar .menu {
-  display: flex;
-  margin-top: 48px;
+  position: absolute;
+  width: 381px;
+  height: 19px;
+  left: 1082px;
+  top: 48px;
+
   font-weight: 500;
 }
 
 .menu .menu-item-1 {
-  margin-right: 67px;
+  position: relative;
   color: #0065fc;
+  width: 20%;
+}
+
+.menu-item-2 {
+  position: relative;
+  left: 97px;
+  width: 20%;
 }
 
 .menu .rectangle {
@@ -55,9 +70,7 @@ a {
   width: 162px;
   position: relative;
   bottom: 48px;
-  left: 130px;
-  margin: 0;
-  padding: 0;
+  right: 30px;
 }
 
 .baseline .description-container {
@@ -101,6 +114,7 @@ a {
   margin: 16px 0px 0px 18px;
   height: 18px;
   width: 14px;
+  color: #000000;
 }
 
 .baseline input {
@@ -385,10 +399,39 @@ a {
   background-size: cover;
 }
 
-.card-info img {
+.card-info .img {
+  position: relative;
+  bottom: 5px;
+  margin: 0px 22px 0px 28px;
+  align-items: center;
   height: 445px;
   width: 302px;
   border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.vp .img {
+  background: url(./assets/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fp .img {
+  background: url(./assets/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.pnc .img {
+  background: url(./assets/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.ndg .img {
+  background: url(./assets/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .cards-footer h4 {
@@ -400,16 +443,16 @@ a {
 .cards-footer .card-bottom {
   display: flex;
   justify-content: space-between;
-  margin: 0 50px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin: 0 50px 0 21px;
 }
 
 .card-name {
   position: relative;
-  background: #fff;
+  background: #ffffff;
   border-radius: 0px 0px 20px 20px;
   height: 56px;
   bottom: 60px;
+  left: 28px;
 }
 
 .card-name span {
@@ -451,15 +494,18 @@ a {
 @media screen and (max-width: 992px) and (min-width: 768px) {
   html {
     overflow-x: hidden;
-    max-width: 100vh;
+    width: 1024px;
   }
 
   body {
-    max-width: 1024px;
+    overflow-x: hidden;
   }
 
-  .menu {
-    margin-left: 410px;
+  .topbar .menu {
+    left: 660px;
+    top: 48px;
+
+    font-weight: 500;
   }
 
   .filterbar_container {
@@ -550,10 +596,10 @@ a {
     align-items: center;
   }
 
-  .card-info img {
-    position: relative;
+  .card-info .img {
     height: 267px;
     width: 182px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   }
 
   .card-name {
@@ -600,6 +646,10 @@ a {
     overflow-x: hidden;
   }
 
+  .header {
+    height: 636px;
+  }
+
   .topbar {
     flex-direction: column;
     margin: 0px auto;
@@ -607,27 +657,45 @@ a {
   }
 
   .topbar .logo {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 21px;
+    margin: 21px auto 0px auto;
   }
 
   .menu .rectangle {
     visibility: hidden;
   }
 
-  .menu .rectangle-2 {
-    visibility: hidden;
+  .topbar .menu-item-1 {
+    left: 33px;
   }
 
-  .menu {
+  .topbar .menu-item-2 {
+    padding: 0;
+    left: 125px;
+  }
+
+  .topbar .menu {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 38px auto 0px auto;
     width: 100%;
-
-    justify-content: center;
   }
 
-  .menu-item-1 {
-    padding-right: 35px;
+  .rec-mobil-1 {
+    position: relative;
+    top: 18px;
+    background: #0065fc;
+    height: 3px;
+    width: 50%;
+  }
+
+  .rec-mobil-2 {
+    position: relative;
+    background: #f2f2f2;
+    height: 3px;
+    width: 50%;
+    top: 15px;
+    left: 50%;
   }
 
   .home-section {
@@ -676,8 +744,9 @@ a {
     border: 1px solid #0065fc;
     border-radius: 0px 15px 15px 0px;
   }
+
   .loupe i {
-    color: #fff;
+    color: #ffffff;
     position: relative;
     left: 16px;
     top: 16px;
@@ -693,8 +762,11 @@ a {
   }
 
   .filterbar_link {
+    position: absolute;
+
     padding: 0;
-    width: 100%;
+    margin: 0;
+    flex-direction: column;
   }
 
   .filterbar {
@@ -708,34 +780,42 @@ a {
     font-size: 11px;
     height: 50px;
     width: 160px;
-    margin: 0;
+    position: relative;
+    text-align: left;
   }
 
   .filterbar i {
-    margin-right: 5px;
+    position: relative;
+    left: 6px;
+
     font-size: 1.2rem;
   }
 
   .eco {
-    position: absolute;
-    top: 70px;
+    position: relative;
+
+    top: 65px;
   }
 
   .fam {
-    position: absolute;
-    top: 70px;
-    left: 235px;
+    position: relative;
+    left: 174px;
+    top: 15px;
   }
 
   .ani {
-    position: absolute;
-    left: 235px;
-    top: 135px;
+    position: relative;
+    left: 174px;
+    bottom: 20px;
+  }
+
+  .ani i {
+    left: 0px;
   }
 
   .rom {
-    position: absolute;
-    top: 135px;
+    position: relative;
+    top: 30px;
   }
 
   .infobar {
@@ -743,19 +823,24 @@ a {
   }
 
   .infobar h3 {
+    margin: 0;
+    bottom: 25px;
     left: 55px;
     padding-right: 70px;
   }
 
   .infobar .information {
-    margin: 15px 0px 0px 29px;
+    position: relative;
+    top: 21px;
+    right: 40px;
+
     z-index: 1;
   }
 
   .infobar .elipse {
     position: relative;
     left: 19px;
-    bottom: 21px;
+    bottom: 0px;
   }
 
   .cards {
@@ -801,7 +886,7 @@ a {
     width: 100%;
     height: 1299px;
     margin: 0;
-    background-color: #ffffff;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -837,5 +922,67 @@ a {
 
   .show-more {
     visibility: hidden;
+  }
+
+  .cards-footer {
+    width: 100%;
+    height: 886px;
+    align-items: center;
+  }
+
+  .cards-footer h4 {
+    margin: 0px;
+    top: 70px;
+    padding-right: 175px;
+    left: 20px;
+  }
+
+  .card-bottom {
+    position: relative;
+    top: 75px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-info {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-info .img {
+    height: 190px;
+    width: 334px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    align-items: center;
+    margin-left: 19px;
+    margin-right: 0;
+  }
+
+  .card-name {
+    left: 19px;
+  }
+
+  .fp,
+  .vp,
+  .pnc,
+  .ndg {
+    height: 208px;
+  }
+
+  .footer {
+    margin: 0;
+    top: 0;
+    height: 0;
+  }
+
+  .footer-container {
+    margin: 40px 0 0 0;
+    padding: 0px 0px 35px 30px;
+    position: relative;
+    top: 100px;
+    height: 501px;
+    flex-direction: column;
+    justify-content: center;
+    background: #f2f2f2;
   }
 }
