@@ -1,0 +1,1030 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.187;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Raleway";
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+i {
+  color: #0065fc;
+}
+
+.header .topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 77px;
+}
+
+.topbar .logo {
+  margin: 44px 0px 0px 55px;
+}
+
+.logo img {
+  height: 19px;
+  width: 61.09px;
+}
+
+.topbar .menu {
+  position: relative;
+  width: 381px;
+  height: 19px;
+  left: 695px;
+  top: 48px;
+
+  font-weight: 500;
+}
+
+.menu .menu-item-1 {
+  position: relative;
+  color: #0065fc;
+}
+
+.menu-item-2 {
+  position: relative;
+  left: 97px;
+}
+
+.menu .rectangle {
+  background-color: #0065fc;
+  height: 2px;
+  width: 162px;
+  position: relative;
+  bottom: 48px;
+  right: 30px;
+}
+
+.baseline .description-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-container h1 {
+  position: relative;
+  top: 63px;
+  left: 55px;
+  font-size: 22px;
+  margin: 0;
+}
+
+.description-container p {
+  position: relative;
+  margin: 0;
+  top: 72px;
+  left: 55px;
+  font-weight: 400;
+}
+
+.baseline form {
+  position: relative;
+  top: 95px;
+  left: 55px;
+  display: flex;
+  height: 49px;
+}
+
+.icon_location {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
+  height: 49px;
+  width: 50px;
+}
+
+.icon_location i {
+  margin: 16px 0px 0px 18px;
+  height: 18px;
+  width: 14px;
+  color: #000000;
+}
+
+.baseline input {
+  font-weight: 700;
+  font-size: 18px;
+  padding-left: 17px;
+}
+
+.baseline .button {
+  border: 1px solid #0065fc;
+  border-radius: 0px 15px 15px 0px;
+  background: #0065fc;
+  padding: 14px 16px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.loupe {
+  visibility: hidden;
+}
+
+.filterbar_container {
+  display: flex;
+  flex-direction: row;
+  margin: 121px 0px 0px 62px;
+}
+
+.filterbar_filtre h2 {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.filterbar_link {
+  display: flex;
+  white-space: nowrap;
+}
+
+.filterbar_link li {
+  list-style-type: none;
+  margin-right: 50px;
+  display: flex;
+  font-size: 17px;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  align-items: center;
+  padding: 14px 20px;
+}
+
+.filterbar_link i {
+  color: #0065fc;
+  height: 16.26px;
+  width: 22px;
+  margin-right: 10px;
+}
+
+.eco:hover,
+.fam:hover,
+.ani:hover,
+.rom:hover {
+  background: #deebff;
+  transition: 0.2s;
+}
+
+.infobar h3 {
+  position: relative;
+  margin-top: 63px;
+  bottom: 63px;
+  left: 94px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.infobar .info {
+  position: relative;
+  left: 59px;
+  top: 21px;
+  position: relative;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  right: 11px;
+}
+
+.info i {
+  position: relative;
+  left: 43%;
+  bottom: 4%;
+
+  font-size: 10px;
+}
+
+.home-section {
+  position: relative;
+  bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-section img {
+  height: 100px;
+  width: 100px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  width: 880px;
+  height: 626px;
+  margin: 20px 0px 0px 47px;
+  border-radius: 20px;
+}
+
+.container h2 {
+  font-size: 22px;
+  margin: 42px 0 0 40px;
+}
+
+.block-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 23px 40px 0 40px;
+}
+
+.block-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 40px 0px 40px;
+}
+
+.block-first {
+  background-color: #fff;
+  width: 246px;
+  height: 199px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  border-radius: 20px;
+  margin-right: 31px;
+}
+
+.block-img {
+  height: 124px;
+  width: 246px;
+  border: 5px solid #fff;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.block-body h4 {
+  position: relative;
+  bottom: 20px;
+  left: 16px;
+}
+
+.block-body .prix {
+  position: relative;
+  bottom: 37px;
+  left: 16px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.prix i {
+  position: relative;
+  bottom: 5px;
+  font-size: 12px;
+  width: 11px;
+  color: #0065fc;
+}
+
+.a .block-img {
+  background: url(/images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.b .block-img {
+  background: url(/images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.c .block-img {
+  background: url(/images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.d .block-img {
+  background: url(/images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.e .block-img {
+  background: url(/images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.f .block-img {
+  background: url(/images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.show-more span {
+  position: relative;
+  top: 40px;
+  left: 44px;
+}
+
+.cards {
+  background-color: #f2f2f2;
+  margin: 20px 50px 0px 40px;
+  width: 415px;
+  height: 625px;
+  border-radius: 20px;
+}
+
+.card-title h3 {
+  position: relative;
+  left: 37px;
+  top: 20px;
+  font-size: 22px;
+}
+
+.card-title i {
+  position: relative;
+  left: 360px;
+  bottom: 23px;
+}
+
+.card-description h2 {
+  position: relative;
+  font-size: 16px;
+  left: 10px;
+  padding-right: 20px;
+}
+
+#e1,
+#e2,
+#e3,
+#e4,
+#e5,
+#e6,
+#e7,
+#e8,
+#e9 {
+  color: #f2f2f2;
+}
+
+.card {
+  width: 343px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  margin: 0px 37px 33px 37px;
+}
+
+.card_img {
+  height: 137px;
+  width: 144px;
+  border: 5px solid #fff;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.card-description h4 {
+  position: relative;
+  height: 38px;
+  width: 168px;
+  left: 10px;
+}
+
+.card-description p {
+  position: relative;
+  left: 10px;
+  bottom: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-stars {
+  position: relative;
+  left: 10px;
+  bottom: 4px;
+}
+
+.card-stars i {
+  font-size: 12px;
+  width: 10px;
+}
+
+.threecard p {
+  bottom: 35px;
+}
+
+.onecard .card_img {
+  background: url(/images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.twocard .card_img {
+  background: url(/images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.threecard .card_img {
+  background: url(/images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.vp .img {
+  background: url(/images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fp .img {
+  background: url(/images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.pnc .img {
+  background: url(/images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.ndg .img {
+  background: url(/images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-info {
+  position: relative;
+  left: 45px;
+  padding-right: 43px;
+}
+
+.card-info .img {
+  height: 444.5082092285156px;
+  width: 302px;
+
+  border-radius: 20px;
+}
+
+.cards-footer h4 {
+  position: relative;
+  left: 50px;
+  font-size: 22px;
+}
+
+.cards-footer .card-bottom {
+  flex-direction: row;
+  display: flex;
+}
+
+.card-name {
+  position: relative;
+  background: #ffffff;
+  border-radius: 0px 0px 20px 20px;
+  height: 56px;
+  width: 302px;
+  bottom: 55px;
+}
+
+.card-name span {
+  position: relative;
+  top: 20px;
+  left: 19px;
+}
+
+.footer {
+  margin: 0 48px;
+  background: #f2f2f2;
+  height: 192px;
+  width: 1339px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 327px 0px 70px;
+}
+
+.footer-columns h4 {
+  font-size: 18px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+}
+
+.footer-column a {
+  padding: 2px 0px 10px 0px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/**************** RESPONSIVE TABLETTE ******************/
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  html {
+    overflow-x: hidden;
+    width: 1024px;
+  }
+
+  body {
+    margin-left: 30px;
+  }
+
+  .header {
+    max-width: 1024px;
+  }
+
+  .topbar .menu {
+    left: 390px;
+    top: 48px;
+
+    font-weight: 500;
+    max-width: 1024px;
+  }
+
+  .filterbar_container {
+    margin-left: 50px;
+  }
+
+  .filterbar_link li {
+    margin-right: 20px;
+  }
+
+  .filterbar_link {
+    padding-left: 18px;
+  }
+
+  .home-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infobar .info {
+    left: 50px;
+  }
+
+  .infobar h3 {
+    left: 85px;
+  }
+
+  .cards {
+    background-color: #f2f2f2;
+    width: 883px;
+    height: 278px;
+    border-radius: 20px;
+    margin: 53px 0px 0px 48px;
+  }
+
+  .card-title {
+    position: relative;
+    bottom: 10px;
+  }
+
+  .card-title h3 {
+    margin-bottom: 26px;
+  }
+
+  .card-title i {
+    padding-left: 465px;
+  }
+
+  .cards-tablette {
+    display: flex;
+    margin-right: 0px;
+  }
+
+  .card {
+    width: 252px;
+    margin: 0px 0px 55px 30px;
+  }
+
+  .card_img {
+    height: 144px;
+    width: 106px;
+  }
+
+  .card-description h4 {
+    height: 38px;
+    width: 121px;
+    left: 10px;
+    bottom: 10px;
+    font-size: 14px;
+  }
+
+  .card-description p {
+    font-size: 13px;
+  }
+
+  .card-stars {
+    top: 12px;
+    bottom: 0px;
+  }
+
+  .onecard p {
+    bottom: 25px;
+  }
+
+  .twocard p {
+    bottom: 10px;
+  }
+
+  .threecard p {
+    bottom: 25px;
+  }
+
+  .card-stars i {
+    font-size: 12px;
+    width: 10px;
+  }
+
+  .card-info {
+    height: 267px;
+    width: 182px;
+    margin: 0px 22px 0px 28px;
+    align-items: center;
+  }
+
+  .card-info .img {
+    height: 267px;
+    width: 182px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  }
+
+  .card-name {
+    height: 56px;
+    width: 182px;
+  }
+
+  .cards-footer .card-bottom {
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 878px;
+  }
+
+  .cards-footer h4 {
+    margin-left: 5px;
+  }
+
+  .card-bottom {
+    padding-bottom: 69px;
+  }
+
+  .pnc span {
+    position: relative;
+    top: 9px;
+  }
+
+  .ndg span {
+    position: relative;
+    top: 9px;
+  }
+
+  .footer {
+    width: 880px;
+  }
+
+  .footer-container {
+    margin-right: 173px;
+  }
+}
+
+/************** RESPONSIVE MOBILE **********************/
+@media screen and (max-width: 767px) {
+  html {
+    min-width: 375px;
+
+    overflow-x: hidden;
+  }
+
+  .header {
+    height: 636px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    margin: 0px auto;
+    width: 100%;
+  }
+
+  .topbar .logo {
+    margin: 21px auto 0px auto;
+  }
+
+  .menu .rectangle {
+    visibility: hidden;
+  }
+
+  .topbar .menu-item-1 {
+    left: 33px;
+  }
+
+  .topbar .menu-item-2 {
+    padding: 0;
+    left: 125px;
+  }
+
+  .topbar .menu {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 38px auto 0px auto;
+    width: 100%;
+  }
+
+  .rec-mobil-1 {
+    position: relative;
+    top: 18px;
+    background: #0065fc;
+    height: 3px;
+    width: 50%;
+  }
+
+  .rec-mobil-2 {
+    position: relative;
+    background: #f2f2f2;
+    height: 3px;
+    width: 50%;
+    top: 15px;
+    left: 50%;
+  }
+
+  .home-section {
+    flex-direction: column-reverse;
+  }
+
+  .cards {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .baseline h1 {
+    left: 20px;
+    top: 31px;
+    padding-right: 30px;
+  }
+
+  .baseline p {
+    left: 20px;
+    top: 40px;
+  }
+
+  .baseline form {
+    position: static;
+    margin-top: 69px;
+    margin-left: 22px;
+  }
+
+  form .button {
+    visibility: hidden;
+  }
+
+  form input {
+    min-width: 15rem;
+    width: 100vh;
+    padding: 0;
+  }
+
+  .loupe {
+    position: relative;
+    right: 138px;
+    background: #0065fc;
+    visibility: visible;
+    min-width: 49px;
+    height: 49px;
+    border: 1px solid #0065fc;
+    border-radius: 0px 15px 15px 0px;
+  }
+
+  .loupe i {
+    color: #ffffff;
+    position: relative;
+    left: 16px;
+    top: 16px;
+  }
+
+  .icon_location {
+    min-width: 50px;
+  }
+
+  .filterbar_container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .filterbar_link {
+    position: absolute;
+
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .filterbar {
+    position: relative;
+    bottom: 120px;
+    right: 43px;
+  }
+
+  .filterbar li {
+    border-radius: 25px;
+    font-size: 11px;
+    height: 50px;
+    width: 160px;
+    position: relative;
+    text-align: left;
+  }
+
+  .filterbar i {
+    position: relative;
+    left: 6px;
+
+    font-size: 1.2rem;
+  }
+
+  .eco {
+    position: relative;
+
+    top: 65px;
+  }
+
+  .fam {
+    position: relative;
+    left: 174px;
+    top: 15px;
+  }
+
+  .ani {
+    position: relative;
+    left: 174px;
+    bottom: 20px;
+  }
+
+  .ani i {
+    left: 0px;
+  }
+
+  .rom {
+    position: relative;
+    top: 30px;
+  }
+
+  .infobar {
+    margin: 0;
+  }
+
+  .infobar h3 {
+    margin: 0;
+    top: 10px;
+    left: 55px;
+    padding-right: 70px;
+  }
+
+  .infobar .info {
+    position: relative;
+    top: 32px;
+    left: 20px;
+  }
+
+  .cards {
+    border-radius: 0px;
+  }
+
+  .cards h3 {
+    left: 0;
+    top: 10px;
+  }
+
+  .card-title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .card-title i {
+    position: static;
+    margin-top: 35px;
+    padding-left: 75px;
+  }
+
+  .cards-tablette {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 11px;
+    margin-top: 8px;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    height: 1299px;
+    margin: 0;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px;
+  }
+
+  .container h2 {
+    position: relative;
+    bottom: 19px;
+    right: 45px;
+  }
+
+  .block-top {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .block-bottom {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .block-first {
+    margin: 0;
+    height: 199px;
+    width: 335px;
+    margin-bottom: 12px;
+  }
+
+  .block-img {
+    width: 335px;
+  }
+
+  .show-more {
+    visibility: hidden;
+  }
+
+  .cards-footer {
+    width: 100%;
+    height: 886px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-footer h4 {
+    margin: 0px;
+    top: 70px;
+    left: 22px;
+    padding-right: 200px;
+  }
+
+  .cards-footer .card-bottom {
+    position: relative;
+    top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 21px;
+    width: 100%;
+  }
+
+  .card-info .img {
+    height: 190px;
+    width: 334px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    align-items: center;
+    margin: 0 3px 0 0;
+    padding: 0;
+    right: 0px;
+    border-radius: 20px;
+  }
+
+  .card-name {
+    left: 0px;
+    width: 334px;
+    bottom: 56px;
+  }
+
+  .fp,
+  .vp,
+  .pnc,
+  .ndg {
+    height: 208px;
+  }
+
+  .footer {
+    margin: 0;
+    top: 0;
+    height: 0;
+  }
+
+  .footer-container {
+    margin: 40px 0 0 0;
+    padding: 0px 0px 35px 30px;
+    position: relative;
+    top: 100px;
+    height: 501px;
+    flex-direction: column;
+    justify-content: center;
+    background: #f2f2f2;
+  }
+}
