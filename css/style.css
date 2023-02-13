@@ -43,14 +43,40 @@ i {
   position: relative;
   width: 381px;
   height: 19px;
-  left: 695px;
-  top: 48px;
+  left: 670px;
+  top: -2px;
 
   font-weight: 500;
 }
 
 .menu .menu-item-1 {
   position: relative;
+  border-top: 2px solid #ffffff;
+  width: 162px;
+  display: inline-block;
+  padding-top: 46px;
+  padding-left: 25px;
+}
+
+.menu .menu-item-2 {
+  position: relative;
+  border-top: 2px solid #ffffff;
+  width: 162px;
+  display: inline-block;
+  padding-top: 46px;
+  padding-left: 50px;
+  left: 15px;
+}
+
+.menu .menu-item-1:hover {
+  border-top: 2px solid #0065fc;
+  padding-top: 46px;
+  color: #0065fc;
+}
+
+.menu .menu-item-2:hover {
+  border-top: 2px solid #0065fc;
+  padding-top: 46px;
   color: #0065fc;
 }
 
@@ -60,7 +86,7 @@ i {
 }
 
 .menu .rectangle {
-  background-color: #0065fc;
+  background-color: #ffffff;
   height: 2px;
   width: 162px;
   position: relative;
@@ -116,6 +142,8 @@ i {
   font-weight: 700;
   font-size: 18px;
   padding-left: 17px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
 }
 
 .baseline .button {
@@ -519,13 +547,10 @@ i {
 /**************** RESPONSIVE TABLETTE ******************/
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
-  html {
-    overflow-x: hidden;
-    width: 1024px;
-  }
-
   body {
-    margin-left: 30px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    min-width: 768px;
   }
 
   .header {
@@ -533,8 +558,8 @@ i {
   }
 
   .topbar .menu {
-    left: 390px;
-    top: 48px;
+    left: 370px;
+    top: 0px;
 
     font-weight: 500;
     max-width: 1024px;
@@ -690,10 +715,11 @@ i {
 
 /************** RESPONSIVE MOBILE **********************/
 @media screen and (max-width: 767px) {
-  html {
-    min-width: 375px;
-
+  html,
+  body {
     overflow-x: hidden;
+    min-width: 375px;
+    margin: 0;
   }
 
   .header {
@@ -715,7 +741,7 @@ i {
   }
 
   .topbar .menu-item-1 {
-    left: 33px;
+    width: 150px;
   }
 
   .topbar .menu-item-2 {
@@ -992,7 +1018,7 @@ i {
     width: 334px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     align-items: center;
-    margin: 0 3px 0 0;
+    margin: 0 7px 0 0;
     padding: 0;
     right: 0px;
     border-radius: 20px;
