@@ -717,65 +717,73 @@ i {
 @media screen and (max-width: 767px) {
   html,
   body {
-    overflow-x: hidden;
     min-width: 375px;
+
+    overflow-x: hidden;
     margin: 0;
   }
 
   .header {
     height: 636px;
+    width: 100%;
   }
 
   .topbar {
+    display: flex;
     flex-direction: column;
-    margin: 0px auto;
     width: 100%;
   }
 
   .topbar .logo {
-    margin: 21px auto 0px auto;
-  }
-
-  .menu .rectangle {
-    visibility: hidden;
-  }
-
-  .topbar .menu-item-1 {
-    width: 150px;
-  }
-
-  .topbar .menu-item-2 {
-    padding: 0;
-    left: 125px;
+    margin: 0;
+    position: relative;
+    top: 21px;
+    left: 157px;
   }
 
   .topbar .menu {
-    position: relative;
+    top: 48px;
     left: 0;
-    top: 0;
-    margin: 38px auto 0px auto;
-    width: 100%;
+    bottom: 0;
+    margin-bottom: 70px;
+    margin-left: 0px;
   }
 
-  .rec-mobil-1 {
-    position: relative;
-    top: 18px;
-    background: #0065fc;
-    height: 3px;
-    width: 50%;
+  .menu .menu-item-1 {
+    left: 0px;
+    padding: 0px 0px 23px 45px;
+    border-bottom: 2px solid #f2f2f2;
+    width: 187px;
   }
 
-  .rec-mobil-2 {
-    position: relative;
-    background: #f2f2f2;
-    height: 3px;
-    width: 50%;
-    top: 15px;
-    left: 50%;
+  .menu .menu-item-2 {
+    padding: 0 0 23px 55px;
+    left: -5px;
+    border-bottom: 2px solid #f2f2f2;
+    width: 187px;
+  }
+
+  .menu .menu-item-1:hover {
+    border-bottom: 2px solid #0065fc;
+    border-top: 0;
+    padding-top: 0;
+    color: #0065fc;
+  }
+
+  .menu .menu-item-2:hover {
+    border-top: 0;
+    border-bottom: 2px solid #0065fc;
+    padding-top: 0;
+    left: -5px;
+    margin: 0;
+    right: 0;
+
+    color: #0065fc;
   }
 
   .home-section {
     flex-direction: column-reverse;
+    width: 100%;
   }
 
   .cards {
@@ -1041,6 +1049,7 @@ i {
     margin: 0;
     top: 0;
     height: 0;
+    width: 100%;
   }
 
   .footer-container {
