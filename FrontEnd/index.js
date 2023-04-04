@@ -1,13 +1,13 @@
-
-console.log('reponse est lancer');
 const reponse = await fetch("http://localhost:5678/api/works", {
     method: 'GET',
     headers: {
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY4MDE3MDIzMiwiZXhwIjoxNjgwMjU2NjMyfQ.X0IIyhBK76LcJufZm-F3GdpeQXzhQhrVQs6G8eF98RU",
-        "Content-Type": "application/json"
+        'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY4MDE3OTI5MywiZXhwIjoxNjgwMjY1NjkzfQ.lJKOqeglPNzKxSQGO7mM-nXRKVkZOCKS8CIyr-duoVE',
+
     }
+
 });
-console.log('réponse est reçu');
+
+
 const works = await reponse.json();
 
 // Fonction pour générer les articles du site avec les données du JSON
@@ -41,77 +41,67 @@ function genererworks(works) {
     }
 }
 
-// Fonction qui va selectionner la galerie et supprimer l'élément enfant de la galerie
+// Fonction qui va selectionner la gallery et supprime l'enfant element de la gallery
+
 function supprimerElement(index) {
     const sectionGallery = document.querySelector(".gallery");
-    if (index >= sectionGallery.childNodes.length) {
-        console.error("Index invalide");
-        return;
-    }
-    sectionGallery.removeChild(sectionGallery.childNodes[index]);
-
-    // Supprimer également l'élément du stockage de session
-    const works = JSON.parse(sessionStorage.getItem('works'));
-    if (index >= works.length) {
-        console.error("Index invalide");
-        return;
-    }
-    works.splice(index, 1);
-    sessionStorage.setItem('works', JSON.stringify(works));
+    sectionGallery.removeChild(sectionGallery.childNodes[index]); // la méthode c'est removeChild qui se base sur l'index (en parametre [index]) des éléments générer (works) avec la propriété "childNodes" qui représente
+    // les "noeuds" qui sont juste les éléments du DOM , noeuds = éléments dom , ici noeuds = works
 }
 
+// Fonction avec une boucle for pour la modal , fonctionne comme celle du haut "genereworks"
 
-// Fonction avec une boucle pour la modale, fonctionne comme celle du haut "genereworks"
 function genererworksmodal(works) {
-    // Vérifier s'il existe des éléments dans le stockage local et utiliser-les
-    const savedWorks = JSON.parse(localStorage.getItem("works"));
-    if (savedWorks && savedWorks.length > 0) {
-        works = savedWorks;
-    }
-
     for (let i = 0; i < works.length; i++) {
         const article = works[i];
+
         const figureElement = document.createElement("figure");
+
         const imageElement = document.createElement("img");
         imageElement.src = article.imageUrl;
+
         const nomElement = document.createElement("figcaption");
-        nomElement.innerText = "éditeur";
+        nomElement.innerText = "editer";
+
         const mouveArrow = document.createElement("a");
         mouveArrow.href = "#";
-        mouveArrow.innerHTML = '<i class="fa-solid fa-arrows-up-down-left-right mouve"></i>';
+        mouveArrow.innerHTML =
+            '<i class="fa-solid fa-arrows-up-down-left-right mouve"></i>';
+
         figureElement.appendChild(mouveArrow);
+
         const trashIcon = document.createElement("a");
         trashIcon.href = "#";
-        trashIcon.innerHTML = '<i class="fa-sharp fa-regular fa-trash-can trash"></i>';
+        trashIcon.innerHTML =
+            '<i class="fa-sharp fa-regular fa-trash-can trash"></i>';
 
-
-
-        // Ajout d'un événement clic pour l'icône poubelle, pour qu'au clic l'élément en question soit supprimé
+        // Ajout d'un évemenent clic pour l'icon trash , pour qu'au click l'élémment en question soit supprimé
         trashIcon.addEventListener("click", () => {
             fetch(`http://localhost:5678/api/works/${article.id}`, {
                 method: "DELETE",
             })
                 .then((response) => response.json())
                 .then((data) => {
-                    console.log("ça fonctionne :", data);
-                    const index = works.findIndex((work) => work.id === article.id);
+                    console.log("Success:", data);
+                    const index = works.findIndex((work) => work.id === article.id); // Trouver l'index de l'article à supprimer
                     works.splice(index, 1);
                     figureElement.remove();
                     supprimerElement(index);
-
-                    // Enregistrer la galerie mise à jour dans le stockage local
-                    localStorage.setItem("works", JSON.stringify(works));
                 })
                 .catch((error) => console.error("Error:", error));
         });
 
         figureElement.appendChild(trashIcon);
-        console.log(nomElement);
-        const sectionGallery = document.querySelector("#gallery-modal");
-        sectionGallery.appendChild(figureElement);
-        figureElement.appendChild(imageElement);
-        figureElement.appendChild(nomElement);
 
+        console.log(nomElement);
+
+        const sectionGallery = document.querySelector("#gallery-modal");
+
+        sectionGallery.appendChild(figureElement);
+
+        figureElement.appendChild(imageElement);
+
+        figureElement.appendChild(nomElement);
     }
 }
 

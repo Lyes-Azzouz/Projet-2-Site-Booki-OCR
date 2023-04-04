@@ -142,6 +142,8 @@ btnModal1.addEventListener("click", function () {
         }
     });
 
+
+
     // Clic sur l'input "file"
     boutonAjout.addEventListener("click", function () {
         inputPhoto.click();
@@ -159,7 +161,7 @@ btnModal1.addEventListener("click", function () {
     labelTitre.textContent = "Titre";
 
     const inputCategorie = document.createElement("input");
-    inputCategorie.type = "text";
+    inputCategorie.type = "number";
 
     const labelCategorie = document.createElement("label");
     labelCategorie.textContent = "Catégorie";
@@ -201,46 +203,46 @@ btnModal1.addEventListener("click", function () {
     // Ajout de l'écouteur d'évènement au click sur le bouton 'Valider"
     btnValider.addEventListener("click", async () => {
         //Récupération des données du formulaire
+
+
         const inputPhotoForm = inputPhoto;
         const photoFormulaire = inputPhotoForm.files[0];
+        const imageUrl = URL.createObjectURL(photoFormulaire);
         const titreFormulaire = inputTitre.value;
         const categorieFormulaire = inputCategorie.value;
-        console.log(photoFormulaire, titreFormulaire, categorieFormulaire);
+
 
         //Création de l'objet formData contenant les donnée du forumlaire
         const formData = new FormData();
-        formData.append("imageUrl", photoFormulaire);
+        formData.append("image", imageUrl);
         formData.append("title", titreFormulaire);
-        formData.append("categoryId", categorieFormulaire);
+        formData.append("category", categorieFormulaire);
+        formData.append("userId", 1);
 
         const token = sessionStorage.getItem("token");
-        console.log('Avant la requete');
+        console.log(token);
 
         const reponse = await fetch("http://localhost:5678/api/works", {
-            method: 'POST',
+            method: "POST",
             headers: {
-                "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY4MDE3NzE1MSwiZXhwIjoxNjgwMjYzNTUxfQ.yDQQCYZTzZRnkAvn5RGbSx6Nl_6UMlfiqh9OS6lFGCs",
-                'accept': 'application/json',
-                'Content-Type': `multipart/form-data; boundary=${formData._boundary}`
+                "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY4MDU5MTgxMywiZXhwIjoxNjgwNjc4MjEzfQ.ZkF2SszKnE0cA3-G-mMbsJPliqzEFk3BTYy9ZgDoUUc",
+                "accept": "application/json",
+                "Content-Type": "multipart/form-data"
+
             },
-            body: formData,
+            body: JSON.stringify(formData),
         });
-        console.log('apres la requete');
-
-
-
 
         if (reponse.ok) {
-            // Récupere les travaux mis a jour
+            // Récupere les travaux mis a jour si c'est ok 
             const travaux = await fetch("http://localhost:5678/api/works");
-            const travauxJson = await travaux.json();
+            const works = await travaux.json();
             // Regénération de la gallery
-            genererworks();
-            genererworksmodal();
-        } console.log(reponse);
-    });
-
-
+            genererworks(works);
+            genererworksmodal(works);
+        }
+    }
+    );
 
     // Ajout de l'écouteur d'événement click sur la flèche retour
     flecheRetour.addEventListener("click", function () {
